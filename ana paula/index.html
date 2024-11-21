@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espectro Eletromagnético</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<header>
+    <h1>Espectro Eletromagnético</h1>
+    <p>Explore as diferentes formas de ondas e descubra seus usos!</p>
+</header>
+
+<div class="intro">
+    <h2>Ondas ionizantes</h2>
+    <p>
+        Ondas ionizantes: São ondas com muita energia, capazes de "arrancar" elétrons dos átomos. Isso pode danificar células e até o DNA. Exemplos: raios-X e raios gama.
+        <br>
+        <br>
+        Ondas não ionizantes: São ondas com menos energia, que não conseguem "arrancar" elétrons. Elas não causam tanto dano ao corpo. Exemplos: luz visível, micro-ondas e ondas de rádio.
+        <br>
+        <br>
+        Basicamente, as ondas ionizantes são mais perigosas, enquanto as não ionizantes são mais comuns e geralmente mais seguras.
+    </p>
+</div>
+<div>
+    <div class="wave-container">
+        <div class="wave" style="top: 20px; animation-delay: 0s;"></div>
+        <div class="wave" style="top: 40px; animation-delay: -2s;"></div>
+        <div class="wave" style="top: 60px; animation-delay: -1s;"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="item">
+        <h2>Rádio</h2>
+        <img src="image/radiio.png" alt="Ondas de Rádio">
+        <p> <br>Comprimento de Onda: Longo, variando de metros a quilômetros.
+            <br>
+            <br>Frequência: Baixa, de kilohertz (kHz) até gigahertz (GHz).
+            <br>
+            <br>Exemplo: Utilizadas em transmissões de rádio, televisão e comunicações sem fio (como Wi-Fi).
+            <br>
+            <br>Aplicação: Comunicações de rádio AM e FM, Bluetooth, e telecomunicações.
+            <br>Classificação: Não Ionizante</p>
+    </div>
+    <div class="item">
+        <h2>Micro-ondas</h2>
+        <img src="image/micro.png" alt="Micro-ondas">
+        <p><br>Comprimento de Onda: Um pouco mais curtas que as ondas de rádio, variando de milímetros a centímetros.
+            <br>
+            <br>Frequência: Maior que as ondas de rádio, geralmente na faixa de gigahertz.
+            <br>
+            <br>Exemplo: Utilizadas em fornos de micro-ondas para aquecer alimentos e também em radares.
+            <br>
+            <br>Aplicação: Redes de comunicação sem fio (Wi-Fi), transmissão de dados via satélites, radares meteorológicos.
+            <br><strong>Classificação: Não Ionizante</strong></p>
+    </div>
+    <div class="item">
+        <h2>Infravermelho</h2>
+        <img src="image/infra.png" alt="Infravermelho">
+        <p><br>Comprimento de Onda: Menor que as micro-ondas, variando de 700 nanômetros (nm) a 1 milímetro.
+            <br>
+            <br>Frequência: Entre o infravermelho próximo (mais próximo da luz visível) e o infravermelho distante.
+            <br>
+            <br>Exemplo: Usado em controles remotos e câmeras de visão noturna.
+            <br>Aplicação: Termografia (detecção de calor), sensores de movimento, comunicação por fibra óptica.
+            <br>
+            <br><strong>Classificação: Não Ionizante</strong></p>
+    </div>
+    <div class="item">
+        <h2>Luz Visível</h2>
+        <img src="image/luzv.png" alt="Luz Visível">
+        <p> <br>Comprimento de Onda: Entre 400 e 700 nanômetros (nm).
+            <br>
+            <br>Frequência: Faixa perceptível ao olho humano, representada pelas cores do arco-íris.
+            <br>
+            <br>Exemplo: Luz que vemos diariamente, usada em lâmpadas e telas de dispositivos.
+            <br>
+            <br>Aplicação: Iluminação, câmeras, lentes, todos os dispositivos que produzem ou captam luz.
+            <br>
+            <br><strong>Classificação: Não Ionizante</strong></p>
+    </div>
+    <div class="item">
+        <h2>Ultravioleta</h2>
+        <img src="image/utravioleta.png" alt="Ultravioleta">
+        <p>  <br>Comprimento de Onda: Menor que a luz visível, entre 10 nm e 400 nm.
+            <br>
+            <br>Frequência: Alta, com energias suficientes para causar danos a tecidos biológicos.
+            <br>
+            <br>Exemplo: Radiação emitida pelo Sol que provoca bronzeamento e, em altas doses, queimaduras solares.
+            <br>
+            <br>Aplicação: Esterilização de equipamentos médicos, detecção de substâncias fluorescentes, bronzeamento artificial.
+            <br>
+            <br><strong>Classificação: Parte Ionizante (UV-C) e Parte Não Ionizante (UV-A e UV-B)</strong></p>
+            <button id="abrir_dialog">Saiba Mais</button>
+    </div>
+
+    <dialog>
+        <div class="ultraviolet-section">
+            <h2>Raios Ultravioleta (UV)</h2>
+            <div class="ultraviolet-container">
+                <div class="ultraviolet-item">
+                    <h3>O que são Raios UV?</h3>
+                    <p>
+                        Os raios ultravioleta (UV) são uma forma de radiação eletromagnética com um comprimento de onda menor que o da luz visível, mas maior que os raios X. Eles são emitidos pelo Sol e possuem aplicações variadas.
+                    </p>
+                </div>
+                <div class="ultraviolet-item">
+                    <h3>Aplicações dos Raios UV</h3>
+                    <ul>
+                        <li>Esterilização de equipamentos médicos</li>
+                        <li>Bronzeamento artificial</li>
+                        <li>Detecção de substâncias fluorescentes</li>
+                        <li>Tratamento de água potável</li>
+                    </ul>
+                </div>
+                <div class="ultraviolet-item">
+                    <h3>Cuidados com Raios UV</h3>
+                    <p>
+                        A exposição excessiva a raios UV pode causar danos à pele e aos olhos. É importante usar protetor solar e óculos com proteção UV para minimizar os riscos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button id="fechar_dialog">Fechar</button>
+    </dialog>
+    
+
+    <div class="item">
+        <h2>Raios X</h2>
+        <img src="image/raiox.png" alt="Raios X">
+        <p>  <br>Comprimento de Onda: Muito curto, entre 0,01 a 10 nanômetros.
+            <br>
+            <br>Frequência: Extremamente alta, com energia capaz de penetrar muitos materiais sólidos.
+            <br>
+            <br>Exemplo: Usado em imagens de raios-X para ver estruturas internas do corpo humano.
+            <br>
+            <br>Aplicação: Diagnóstico médico (radiografias), inspeção de bagagens em aeroportos, análise de materiais densos.
+            <br>
+            <br><strong>Classificação: Ionizante</strong></p>
+    </div>
+    <div class="item">
+        <h2>Raios Gama</h2>
+        <img src="image/raiogama.png" alt="Raios Gama">
+        <p> <br>Comprimento de Onda: Os menores no espectro eletromagnético, com comprimentos menores que 0,01 nanômetros.
+            <br>
+            <br>Frequência: Altíssima, com energias que podem causar alterações atômicas.
+            <br>
+            <br>Exemplo: Emissões radioativas de materiais como o cobalto-60 usadas no tratamento de câncer.
+            <br>
+            <br>Aplicação: Radioterapia para tratamento de câncer, estudo de materiais radioativos, detecção astronômica de fenômenos no espaço.
+            <br>
+            <br><strong>Classificação: Ionizante</strong></p>
+    </div>
+</div>
+<div class="resonance-ct-section">
+    <div class="resonance-ct-item">
+        <h2>Ressonância Magnética</h2>
+        <img src="image/recona.jpeg" alt="Ressonância Magnética">
+        <p>
+            A ressonância magnética usa campos magnéticos e ondas de rádio para produzir imagens detalhadas
+            de órgãos e tecidos no corpo. É especialmente útil para analisar tecidos moles, como o cérebro e articulações.
+        
+        </p>
+    </div>
+    <div class="resonance-ct-item">
+        <h2 class="titulo">Tomografia Computadorizada</h2>
+        <img class="segunda" src="image/tomo.avif" alt="Tomografia Computadorizada">
+        <p>
+            A tomografia computadorizada (TC) usa raios X para criar imagens detalhadas em cortes transversais
+            do corpo. Ela é amplamente utilizada para diagnosticar problemas ósseos, lesões internas e detectar tumores.
+           
+        </p>
+    </div>
+    <div>
+        
+    </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

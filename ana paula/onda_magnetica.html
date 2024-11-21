@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espectro Eletromagnético</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .wave-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .wave {
+            position: absolute;
+            width: 200%;
+            height: 100px;
+            opacity: 0.7;
+            animation: move 4s linear infinite;
+        }
+
+        .radio {
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 255, 0, 0.5),
+                rgba(0, 255, 0, 0.5) 20px,
+                rgba(0, 0, 0, 0) 20px,
+                rgba(0, 0, 0, 0) 40px
+            );
+            top: 100px;
+        }
+
+        .visivel {
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(255, 255, 0, 0.5),
+                rgba(255, 255, 0, 0.5) 20px,
+                rgba(0, 0, 0, 0) 20px,
+                rgba(0, 0, 0, 0) 40px
+            );
+            top: 150px;
+        }
+
+        .infravermelho {
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(255, 0, 0, 0.5),
+                rgba(255, 0, 0, 0.5) 20px,
+                rgba(0, 0, 0, 0) 20px,
+                rgba(0, 0, 0, 0) 40px
+            );
+            top: 200px;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 20px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="wave-container">
+        <div class="wave radio" style="animation-delay: 0s;"></div>
+        <div class="wave visivel" style="animation-delay: -1s;"></div>
+        <div class="wave infravermelho" style="animation-delay: -2s;"></div>
+    </div>
+    <div class="info">
+        <h2>Espectro Eletromagnético</h2>
+        <p>As ondas eletromagnéticas incluem:</p>
+        <p>1. Ondas de Rádio</p>
+        <p>2. Luz Visível</p>
+        <p>3. Infravermelho</p>
+    </div>
+
+    <script>
+        // Função para atualizar informações
+        function updateInfo() {
+            const info = document.querySelector('.info');
+            const messages = [
+                "As ondas de rádio são usadas para comunicação.",
+                "A luz visível é a parte do espectro que podemos ver.",
+                "O infravermelho é usado em controle remoto e termografia."
+            ];
+            let index = 0;
+
+            setInterval(() => {
+                info.children[2].innerText = messages[index];
+                index = (index + 1) % messages.length;
+            }, 3000); // Troca de informações a cada 3 segundos
+        }
+
+        // Chama a função para atualizar as informações
+        updateInfo();
+    </script>
+</body>
+</html>
